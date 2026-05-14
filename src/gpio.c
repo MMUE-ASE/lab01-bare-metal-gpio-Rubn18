@@ -15,10 +15,10 @@
 void gpio_enable_clock(uint32_t port_base)
 {
     if (port_base == GPIOB_BASE) {
-        RCC_AHB1ENR |= RCC_AHB1ENR_GPIOBEN
+        RCC_AHB1ENR |= RCC_AHB1ENR_GPIOBEN;
 
     } else if (port_base == GPIOC_BASE) {
-        RCC_AHB1ENR |= RCC_AHB1ENR_GPIOCEN
+        RCC_AHB1ENR |= RCC_AHB1ENR_GPIOCEN;
 
 
     }
